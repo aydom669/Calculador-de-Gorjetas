@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1>
+      Calculadora <br />
+      de Gorjeta
+    </h1>
+
+    <div id="block">
+      <div id="calculator">
+        <label for="valor">Conta</label>
+        <input type="text" name="valor" id="valor" placeholder="0.00" />
+        <br />
+        <label>Gorjeta %</label>
+
+        <span class="buttons">
+          <button class="bt-gorjeta">5%</button>
+          <button class="bt-gorjeta">10%</button>
+          <button class="bt-gorjeta">15%</button>
+          <button class="bt-gorjeta">25%</button>
+          <button class="bt-gorjeta">50%</button>
+          <input
+            type="text"
+            name="gorjetaUser"
+            id="gorjetaUser"
+            placeholder="OUTRO"
+          />
+        </span>
+        <br />
+        <label for="qtyPessoas">Número de Pessoas</label>
+        <input type="number" name="qtyPessoas" id="qtyPessoas" min="1" />
+      </div>
+
+      <div id="resultado">
+        <span class="flexbox">
+          <p>
+            Gorjeta <br />
+            <span class="porPessoa">/Pessoa</span>
+          </p>
+          <p class="valorShow" id="gorjeta">0.00</p>
+        </span>
+
+        <span class="flexbox">
+          <p>
+            Total<br />
+            <span class="porPessoa">/Pessoa</span>
+          </p>
+          <p class="valorShow" id="total">0.00</p>
+        </span>
+
+        <button id="bt-reset">Resetar</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
